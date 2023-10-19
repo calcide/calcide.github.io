@@ -1,334 +1,337 @@
 <!DOCTYPE html>
-<html lang="en" class="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+<html lang="en">
 
-    <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.scss" />
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+</head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
-  <body>
-    <div id="top"></div>
+<body>
+    <div class="main-container">
+        <!-- header section starts  -->
 
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
-        </p>
-      </div>
-    </section>
-    <!-- /END Hero Section -->
+        <header>
+            <section class="nav">
+                <!-- We can also insert any logo here     -->
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
-              </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
-
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
-                <div>
-                  <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
-                  </p>
+                <!-- We can also insert any logo here     -->
+                <div class="logo">
+                    <h2 class="logo">Ri<span>ya</span></h2>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
-                <div>
-                  <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
-                  </p>
+                <!--  checkbox to control the icon's state    -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+                <!--  main menu    -->
+                <ul class="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </section>
+        </header>
+
+        <!-- header section ends -->
+        <section class="hero" id="hero">
+
+
+            <!----hero Section start---->
+
+            <div class="herocontent">
+                <h4>Hello , Nice to see you! I'm</h4>
+                <h1>R<span class="surname">i</span>y<span>a</span> V<span>e</span>rm<span>a</span></h1>
+                <h2>A <span class="span2">UI</span> - <span class="span2">UX</span> Designer.</h2>
+                <h3>Creating Elegant <span class="span2">DESIGNS</span> beyond just </h3>
+                <h3 class="tag2">putting <span class="span2">PIXELS</span> together.</h3>
+
+                <button class="btn1">Hire Me</button>
+                <button class="btn2">Resume  <i class="bi bi-download"></i></button>
+
+
+            </div>
+
+            <div class="image">
+                <img src="uiux-hero.png" alt=" " />
+            </div>
+
+        </section>
+        <!-- hero section ends -->
+
+
+        <!----About section start---->
+        <section class="about" id="about">
+            <div class="main">
+                <img src="about.jpg" class="aboutimg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>UI-UX Designer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim animi nemo, eum iste porro esse, similique pariatur eligendi consequatur voluptas delectus veniam alias harum. Nobis voluptatum omnis dignissimos perferendis
+                        et blanditiis tempora eveniet nostrum obcaecati magni, modi deserunt, recusandae adipisci debitis quos ullam sit minus illum incidunt facilis unde!</p>
+                    <button type="button">Let's Talk</button>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
+        </section>
+        <!-- About section ends -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
-                  </p>
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">Key Skills</h2>
+                <div class="skills-content">
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">HTML5,CSS3,Bootstrap</span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line mern"></div>
+                            </div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">Javascript(ES6)</span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line js"></div>
+                            </div>
+
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">React.js</span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line react"></div>
+                            </div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">Wireframing</span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line mongo"></div>
+                            </div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">Prototyping</span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line node"></div>
+                            </div>
+
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span class="headbar">Figma ,Adobe XD ,Maze </span>
+
+                            </div>
+                            <div class="progressBar">
+                                <div class="line corecs"></div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
+        </section>
+        <!--skills section ends   -->
+
+        <!-- Projects section -->
+
+        <div class="service" id="projects">
+            <div class="title">
+                <h2 class="project-heading">Projects</h2>
             </div>
-          </div>
-          <!-- /END Project -->
+
+            <div class="box">
+                <div class="card">
+
+                    <h5>Project 1</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim odit provident libero dolore, id reprehenderit at beatae magni vero.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <h5>Project 2</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum ullam delectus ad animi a illo earum quibusdam deleniti tenetur.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <h5>Project 3</h5>
+                    <div class="pra">
+                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
+        <!-- Project section ends  -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+        <!-- Experience section starts -->
+
+        <section class="CV-page" id="experience">
+            <div class="CV-grid">
+                <div class="CV-grid-column">
+                    <div class="CV-jobs">
+                        <h2 class="CV-secondaryHeading CV-jobs-heading">Relevant Experience</h2>
+                        <section class="CV-timeline CV-job">
+                            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">UI-UX Designer </span>&#8211; <span class="CV-timeline-heading-location">Company1, India </span><small class="CV-timeline-heading-duration">June 2022 - Present</small></h3>
+                            <ul class="CV-timeline-details">
+                                <li class="CV-job-timeline-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque et autem nesciunt veniam tenetur consequatur temporibus cupiditate adipisci.</li>
+                                <li class="CV-job-timeline-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim expedita necessitatibus inventore modi laudantium quasi voluptas rem architecto quidem!</li>
+                                <li class="CV-job-timeline-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas est id aliquam.</li>
+                                <li class="CV-job-timeline-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis exercitationem ipsam numquam officia nemo!</li>
+                            </ul>
+                        </section>
+                        <section class="CV-timeline CV-job">
+                            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Product Designer </span>&#8211; <span class="CV-timeline-heading-location">Company2 , India</span><small class="CV-timeline-heading-duration">March 2022 - April 2022</small></h3>
+                            <ul class="CV-timeline-details">
+                                <li class="CV-timeline-details-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa laboriosam eos totam nesciunt praesentium nihil ipsum iusto labore recusandae, velit atque voluptate quae. Odio rem soluta cum, expedita ex quisquam dicta
+                                    omnis laudantium et, facilis possimus.</li>
+                                <li class="CV-timeline-details-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience section ends  -->
+
+        <!-- Blog section starts  -->
+        <div class="service" id="blogs">
+            <div class="title">
+                <h2 class="project-heading">Blogs</h2>
+            </div>
+
+            <div class="box">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>Blog 1</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim odit provident libero dolore, id reprehenderit at beatae magni vero.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="far fa-user"></i>
+                    <h5>Blog 2</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum ullam delectus ad animi a illo earum quibusdam deleniti tenetur.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="far fa-bell"></i>
+                    <h5>Blog 3</h5>
+                    <div class="pra">
+                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
+        <!-- Blog section ends -->
 
-        <hr />
+        <!-- contact us section starts  -->
+        <section class="contact" id="contact">
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
+            <h2 class="contactTitle">Contact Me</h2>
+            <div class="container contactUs">
 
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
+                <div class="contact-box">
+                    <div class="left contactLeft">
+                        <img src="contactus.jpg" class="contact-img" alt="" width="150px " />
 
-    <script defer type="module" src="index.js"></script>
-  </body>
+                        <div class="contact-info">
+                            <p><i class="bi bi-telephone-fill"></i> +91-9876543210</p>
+                            <p><i class="bi bi-envelope-fill"> </i>riyaverma@gmail.com</p>
+                            <p><i class="bi bi-geo-alt-fill"></i> New Delhi, India</p>
+
+                        </div>
+                        <p class='contact-content'>If you have any queries at all, please feel free to reach out and I'll gladly answer them. </p>
+
+                        <p class='contact-content'>Thanks for visiting .</p>
+
+                    </div>
+                    <div class="right contactRight">
+                        <h2 class='contacth2'>Lets Connect</h2>
+                        <form>
+                            <input type="text" class="field contactField" placeholder="Enter your Full Name" required/>
+                            <input type="email" class="field contactField" placeholder="Enter your Email" required/>
+                            <input type="text" class="field contactField" placeholder="Enter your Phone Number" />
+                            <textarea name="msg" placeholder="Suggestions/Queries" class="field contactField contactTextarea" required></textarea>
+                            <button class="btn contactBtn" type='submit'>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+        <!-- Footer -->
+
+        <section id="lab_social_icon_footer">
+
+            <div class="container">
+                <div class="text-center center-block">
+                    <a href=""><i class="bi bi-facebook social"></i></a>
+                    <a href=""><i class="bi bi-twitter social"></i></a>
+                    <a href=""><i class="bi bi-whatsapp social"></i></a>
+                    <a href="mailto:#"><i class="bi bi-envelope social"></i></a>
+
+                    <p class="footertext">© @riyaverma</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+
 </html>
