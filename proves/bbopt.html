@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>bbopt</TITLE>
+<META NAME="Template" CONTENT="C:\Office97\Plantillas\english.dot">
+</HEAD>
+<BODY bgcolor=white>
+
+<B><I><FONT FACE="Arial"><P ALIGN="JUSTIFY">Counterpoise Corrected Potential Energy Surfaces</P>
+</B></I></FONT><P ALIGN="JUSTIFY">&nbsp;</P>
+<P>The theoretical study of molecular interactions under the supermolecular approach with finite basis sets centered at the atomic positions originates the so-called Basis Set Superposition Error (BSSE) Within the LCAO-MO approach, each fragment can be expanded to some extent in the basis set of the partner. Thus, BSSE is the unphysical effect due to the improvement of the quantum mechanical description of the fragments within the supermolecule. It has been recognised for long time that this effect results in an increase of the interaction energy.</P>
+<P ALIGN="JUSTIFY">The most widely used method to handle BSSE has been the <I>a posteriori </I>Counterpoise method, introduced by Boys &amp; Bernardi. The counterpoise procedure has been used mainly to obtain corrected interaction energies. For instance, for a complex AB made up of two interacting subsystems A and B, the counterpoise-corrected (CP-corrected) interaction energy is expressed as:</P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="CENTER"><IMG SRC="Image1.gif" WIDTH=671 HEIGHT=96>&#9;(1)</P>
+<P>defining <IMG SRC="Image2.gif" WIDTH=70 HEIGHT=30>as the energy of subsystem X at geometry Y with basis set Z. </P>
+<P>&nbsp;</P>
+<P>However, CP-correction term, expressed as <IMG SRC="Image3.gif" WIDTH=51 HEIGHT=30>, obviously depends on the structural parameters of the complex, as shown by the subscript AB, and therefore, BSSE is not an additive term to the interaction energy. Indeed, it is strongly geometry-dependent and can modify meaningfully the uncorrected, BSSE-contaminated geometrical parameters and vibrational properties.</P>
+<P>In order to obtain corrected interaction energies, one has to deal with a corrected supermolecular Potential Energy Surface. The counterpoise-corrected PES for the supermolecule can be defined as follows</P>
+<P>&nbsp;</P>
+<P ALIGN="CENTER"><IMG SRC="Image4.gif" WIDTH=656 HEIGHT=30>&#9;(2)</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P>The equation above represents another point of view of the CP-correction. In our opinion, <I>CP-correction should be more generally assigned to the supermolecule description, rather than to the interaction energy</I>. .</P>
+<P>Eq. (2) can be easily generalised to N<SUP>th</SUP>-order energy derivatives. Second and third derivatives to be used for both harmonic and anharmonic vibrational analysis can be expressed as linear combinations of the contributions of each term</P>
+<P>&nbsp;</P>
+<P ALIGN="CENTER"><IMG SRC="Image5.gif" WIDTH=563 HEIGHT=55>&#9;&#9;(3)</P>
+<P>&nbsp;</P>
+<P>Any property defined as a derivative of the energy can be corrected for the BSSE. Unlike CHA methods, there is no definition for a CP-corrected electronic density for the supermolecule.</P>
+<P><HR SIZE=5></P>
+<B><I><FONT FACE="Arial"><P ALIGN="JUSTIFY">CP-Optimizer package</P>
+</B></I></FONT><P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">An automatic procedure to perform geometry optimisation and harmonic frequency calculations using GAUSSIAN package has been coded. Our package includes several UNIX scripts (drive files) and FORTRAN 77 programs. From a conventional GAUSSIAN input file, 2N+1 input files for each calculation are generated and computed sequentially. Then CP-corrected, energy, gradient or hessian, depending on the calculation requested, is determined by the corresponding linear combination. In case of geometry optimisations, the new point in the CP-corrected PES is calculated externally and the next set of 2N+1 calculations are carried out again and till the desired convergence.</P>
+<FONT FACE="Arial"><P ALIGN="JUSTIFY">Capabilities:</P>
+
+<UL>
+</FONT><LI>Single point CP-corrected energy calculations. </LI>
+<LI>Analytic CP-corrected optimisations using several optimization methods (DIIS, steepest-descent, BFGS, linear search and 'hybrids') </LI>
+<LI>CP-corrected harmonic frequency calculations. </LI>
+<LI>Single-point and eventually geometry optimisations using the hierarchic counterpoise procedure (P. Valiron, I. Mayer, Chem. Phys. Lett. 275, 46 (1997)) </LI>
+<LI>Use of molecular symmetry to reduce the number of calculations</LI></UL>
+
+<P>&nbsp;</P>
+<FONT FACE="Arial"><P ALIGN="JUSTIFY">Requirements:</P>
+
+<UL>
+</FONT><LI>The code has been tested with GAUSSIAN 94 (e2,d4) and GAUSSIAN 98 (a1) packages on SGI, IBM and PC (linux) machines. </LI>
+<LI>GAUSSIAN links l103 and l301 must be recompiled including some minor modifications for the CP-optimiser. </LI>
+<LI>Due to some technical problems, DFT frequency calculations are not available at the moment. </LI></UL>
+
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P><HR SIZE=5></P>
+<B><I><FONT FACE="Arial"><P ALIGN="JUSTIFY">References:</P>
+</B></I></FONT><P ALIGN="JUSTIFY">S. Simon, M. Duran, J.J. Dannenberg, J. Chem. Phys 105, 11024 (1996)</P>
+<P ALIGN="JUSTIFY">P. Salvador, M. Duran, J. Chem. Phys 111, 4460 (1999)</P>
+<P ALIGN="JUSTIFY">S. Simon, M. Duran, J.J. Dannenberg, J. Phys. Chem. A 103, 1640, (1999)</P>
+<P><HR SIZE=5></P>
+<B><I><FONT FACE="Arial"><P ALIGN="JUSTIFY">Download:</P>
+</B></I></FONT><P ALIGN="JUSTIFY">User <A HREF="http://iqc.udg.es/~perico/download/CPman.doc">Manual</A> (Microsoft Word format).</P>
+<P ALIGN="JUSTIFY"><A HREF="http://iqc.udg.es/~perico/download/cp.tar.gz">CP-optimizer</A> package including source code, instructions and examples.</P>
+<P ALIGN="JUSTIFY">Press <A HREF="http://iqc.udg.es/~perico/howtomodify.html">
+here</A> if you need help to modify the Gaussian TM Links</P>
+<P><HR SIZE=5></P>
+<P ALIGN="JUSTIFY">Please report bugs and technical questions to <A HREF="mailto:perico@iqc.udg.es">perico@iqc.udg.es</A></P></BODY>
+</HTML>
+<A HREF="index.html">
+<img src="sortir2.gif" border=0 align=left alt="Homepage">
+</A>
+<br> <br> <I><FONT SIZE=-2>Last Update: 17/1/2000</FONT></I></BODY>
+</HTML>
